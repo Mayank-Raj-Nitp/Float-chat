@@ -1,0 +1,67 @@
+.navbar {
+  background: linear-gradient(145deg, #0b1a4a, #09153d);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 70px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5),
+              inset 0 0 25px rgba(255, 255, 255, 0.06);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  position: sticky;   /* 👈 stays on top */
+  top: 0;
+  z-index: 100;
+}
+
+/* Logo (normal) */
+.navbar-logo {
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  text-shadow: none;
+  transition: transform 0.3s ease;
+}
+.navbar-logo:hover {
+  transform: scale(1.05);
+}
+
+/* Links (highlighted) */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.navbar-links li a {
+  color: #d6e1ff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s, text-shadow 0.3s;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.navbar-links li a:hover {
+  color: #4ea8ff;
+  text-shadow: 0 0 10px #4ea8ff, 0 0 20px #007bff;
+}
+
+/* Button (3D glowing) */
+.navbar-btn {
+  background: linear-gradient(145deg, #10215a, #0a1845);
+  border: none;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6),
+              -3px -3px 10px rgba(255, 255, 255, 0.07),
+              inset 0 0 10px rgba(78, 168, 255, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.navbar-btn:hover {
+  background: linear-gradient(145deg, #142a70, #0d1e4d);
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.7),
+              0 0 15px rgba(78, 168, 255, 0.5);
+  transform: translateY(-2px);
+}
