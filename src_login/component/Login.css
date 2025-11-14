@@ -1,0 +1,249 @@
+body{
+    justify-content:center;
+    align-items: center;
+}
+.login-container{
+   max-width:410px;/*it won't go beyond it even if there is extra space available*/
+   margin: 0 auto; /*centers it horizontally*/
+   border-radius: 0.5rem;
+   padding: 2rem 1.5 rem;
+   background: #0631a8;
+    display: flex;  
+}
+
+.box{
+flex:1;/* it combines all the three properties 1- flex-grow/shrink:1(allows the item to shrink or grow according to the space) and flex-basis:0 it means set the starting sizee of the item before growing or shrinking */
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: white;
+padding: 20px;
+border: 1px solid black;
+}
+.box:first-child{
+    margin:10px 10px 10px 10px;
+
+}
+#left{
+    border-radius: 15px;
+   flex-direction: column;
+}
+
+.top-logo{
+    width:100px;
+    display: block;
+    /* margin: 0  20px; */
+}
+.page-title{
+    margin: 0 auto ;
+    /* text-align: center; */
+}
+.mail{
+    margin-top: 0.5px;
+    margin-bottom:2px ;
+    border-radius: 5px;
+    max-width: 320px;
+    width: 100%;/* allowsthe element to be responsive and to stratch*/
+    height: 25px;
+    outline: none;/* hides the browser's  default focus outline when you focus on something or click on an input field*/
+    font-size: 0.9rem;/* relative to the font size of tyhe root element(html)*/
+    border: 1px solid #ccc;
+  
+}
+
+.password{
+    margin-top: 0.5px;
+    margin-bottom: 2px;
+    border-radius: 5px;
+     max-width: 320px;
+     width: 100%;
+    outline: none;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.sign-in{
+    margin-top: 20px;
+    background: rgb(1, 68, 1);
+    border-radius: 100px;
+    width: 100%;
+    height: 30px;
+    color: white;
+    cursor: pointer;
+
+}
+.login-container .separator{
+    margin:1.5rem 0;
+    text-align: center;
+    position: relative;
+}
+ .login-container .separator::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    background: #bfb3f2;
+    z-index: -1;
+
+ }
+.login-container.separator span{
+    position: relative;
+    z-index: 3;
+    background: #eff;
+    padding: 0 0.9rem;
+    font-size: 1.06rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+hr.solid{
+    border-top: 3px solid #bbb;
+}
+
+.login-form{
+    align-items: center;
+
+}
+
+.google-button {
+  display: inline-flex;
+  align-items: center;         /* centers logo & text vertically */
+  justify-content: center;     /* centers entire button content */
+  gap: 10px;                   /* space between logo & text */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #555;
+  transition: 0.2s ease-in-out;/* how and how fast a change happen when a property changes example on hovering how fast the color is changing*/
+  white-space: nowrap; /*stop text from breaking into two lines*/
+  width: 100%;
+  max-width: 320px;
+  margin: 10px auto;
+}
+
+.google-button:hover {
+  background-color: #f8f8f8;
+  transform: scale(1.02);
+  border-color:rgb(242, 106, 112) ;
+}
+
+/*  Fix the logo size & position */
+.google-logo {
+  width: 20px;       /* smaller size */
+  height: 20px;
+  object-fit: contain;
+  display: block;
+}
+.facebook-button {
+  display: inline-flex;
+  align-items: center;         /* centers logo & text vertically */
+  justify-content: center;     /* centers entire button content */
+  gap: 10px;                   /* space between logo & text */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #555;
+  transition: 0.2s ease-in-out;
+  white-space: nowrap; /*stop text from breaking into two lines*/
+  width: 100%;
+  max-width: 320px;
+  margin: 10px auto;
+}
+
+.facebook-button:hover {
+  background-color: #f8f8f8;
+  transform: scale(1.02);
+   border-color:rgb(242, 106, 112) ;
+}
+
+/*  Fix the logo size & position */
+.facebook-logo {
+  width: 20px;       /* smaller size */
+  height: 20px;
+  object-fit: contain; /* makes the entire image fit inside the container without being cropped*/
+  display: block;}
+  #right{
+    background-image: url('../../public/ocean.jpg');
+    background-size:100% 100%;
+    position: relative;
+     display: flex; 
+    justify-content: center;
+     align-items: center; 
+    padding: 5px;
+/* make the div circle and align it 
+to make it circle make it square first then give border radius of 50% */
+}.first-step{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    margin-right: 5px;
+      margin-bottom: 100%;
+
+}
+.first-step:hover{
+    background-color: rgb(133, 6, 133);
+    transform: scale(1.1);
+}
+.second-step{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    margin-right: 5px;
+      margin-bottom: 100%;
+    
+}.second-step:hover{
+    background-color: rgb(133, 6, 133);
+    transform: scale(1.1);
+}
+.third-step{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    align-items: center;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 100%;
+    
+}.third-step:hover{
+    background-color:rgba(133,6,133);
+    transform: scale(1.1);
+}.step{
+    font-size: xx-large;
+    font-weight: 1000;
+    margin:2px 2px 2px 2px;
+}
+.input-field-gmail{
+    display: inline-flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.input-field-password{
+   display: inline-flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+} 
+.first,.second,.third{
+margin-left: 10px;
+margin-right: 10px;
+display:block;
+}
