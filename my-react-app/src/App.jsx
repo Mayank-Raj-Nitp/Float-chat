@@ -11,15 +11,7 @@ function App(){
   {/*arbitary-data*/}
   const data=[
     {id:1,float:'1234',Date:"25 april 2025",latitude:2.5,longitude:-35.4,oxygen:220},
-    {id:1,float:'1234',Date:"25 april 2025",latitude:2.5,longitude:-35.4,oxygen:220},
-    {id:1,float:'1234',Date:"25 april 2025",latitude:2.5,longitude:-35.4,oxygen:220},
-    {id:1,float:'1234',Date:"25 april 2025",latitude:2.5,longitude:-35.4,oxygen:220},
-    {id:1,float:'1234',Date:"25 april 2025",latitude:2.5,longitude:-35.4,oxygen:220},
-    {id:1,float:'1234',Date:"25 april 2025",latitude:2.5,longitude:-35.4,oxygen:220},
-    {id:1,float:'1234',Date:"25 april 2025",latitude:2.5,longitude:-35.4,oxygen:220},
-    {id:1,float:'1234',Date:"25 april 2025",latitude:2.5,longitude:-35.4,oxygen:220},
-    {id:1,float:'1234',Date:"25 april 2025",latitude:2.5,longitude:-35.4,oxygen:220},
-    {id:1,float:'1234',Date:"25 april 2025",latitude:2.5,longitude:-35.4,oxygen:220},
+    
   ]
   return<>
   <div className="superior">
