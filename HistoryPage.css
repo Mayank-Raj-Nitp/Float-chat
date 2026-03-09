@@ -1,0 +1,136 @@
+body{font-family:Arial;
+
+}
+.History-Container{
+    display: flex;
+    height: 100vh;
+    width: 100wh;
+ 
+}
+.sidebar{
+    width: 260px;
+    /* background: #2C3E50; */
+    /* background: linear-gradient(180deg,#0f172A 0%,#1E293B 100%); */
+    background-color: #1B263B;
+    color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 10px 20px steelblue inset;
+    border-radius: 15px 0 0 15px;
+    
+}
+.logo{
+    margin-bottom: 20px;
+
+}
+.newChat{
+    padding: 10px;
+    border: none;
+    background: linear-gradient( to right,rgb(43, 165, 227),rgb(221, 132, 147),rgb(27, 27, 190));
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.historyList{
+    overflow-y: auto;
+    flex: 1;
+}
+.historyitem{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.historyitem:hover{background: #343541;}
+
+.deleteBtn{
+border: none;
+background:transparent ;
+color: white;
+cursor: pointer;
+}
+.deleteBtn:hover{
+    background-color:#1B263B;
+}
+.oldchat{
+    flex: 1;/*oldchat box willtake the all right side remaining space*/
+    background: radial-gradient(skyblue,rgb(25, 25, 211));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border:2px solid  rgb(27, 21, 21);
+    border-left: 2px solid #d1d1d1;
+    box-shadow: 5px 15px 18px rgb(4, 99, 149);
+    border-radius: 0 15px 15px 0; /*top-left/top-right/bottom-right/bottom-left*/
+}
+.span{
+    margin-right: 2px;
+    font-size:larger;
+}
+.searchchat{
+   padding: 10px;
+    border: none;
+    background-color:rgb(212, 209, 209);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    display: flex; 
+    
+}
+.input{
+    outline: none;
+    color:rgb(16, 15, 15);
+    flex-grow: 1;/* make it to take the reamining space after the icon*/
+    font-size: small;
+    background-color:transparent;
+    border: none;
+    padding: 0px;
+    margin-left: 10px;
+}
+.sidebar-profile{
+    bottom:20px;
+    left:15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.shortForm{
+    width: 40px;
+    height: 40px;
+    background-color: #6b6bff;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.shortForm:hover{
+    transform: scale(1.1);
+}
+.userName{
+    font-size:large;
+}
+@media(max-width:768px){
+    .History-Container{
+        flex-direction: column;
+    }
+    .sidebar{
+        width: 100%;
+        height: auto;
+    }
+    .oldchat{
+        width: 100%;
+    }
+}
+.deleteicon{
+    display: block;
+    font-size: 18px;
+}
